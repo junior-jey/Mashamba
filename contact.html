@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>agricole et élevage</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script> 
+</head>
+<body>
+ 
+ <!-- Navbar -->
+   <header>
+    <div class="container nav-container">
+        <h2 class="logo">Mashamba Djo Mwinsho</h2>
+
+        <!-- Bouton hamburger -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Menu -->
+        <nav id="nav-menu">
+            <a href="index.html">Accueil</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="contact-container">
+
+    <div class="contact-header">
+        <h1>Contactez-nous</h1>
+        <p>Remplissez le formulaire ci-dessous et notre équipe vous recontactera rapidement.</p>
+    </div>
+
+    <div class="contact-content">
+
+        <!-- FORMULAIRE -->
+        <div class="form-box">
+            <form action="https://formspree.io/f/xbdaeyye" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nom complet</label>
+                        <input type="text" placeholder="Votre nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="votre@email.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Téléphone</label>
+                        <input type="text" placeholder="+243 000 000 000">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type de projet</label>
+                        <select>
+                            <option>Sélectionnez</option>
+                            <option>Agriculture</option>
+                            <option>Élevage</option>
+                            <option>Formation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Décrivez votre projet..."></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">Envoyer</button>
+            </form>
+        </div>
+
+        <!-- INFORMATIONS -->
+        <div class="info-box">
+            <h2>Nos coordonnées</h2><br>
+
+            <p><strong>Téléphone :</strong><br> +243 973 792 602</p><br>
+            <p><strong>Email :</strong><br> contact@agriconseil.com</p><br>
+            <p><strong>Adresse :</strong><br> RDC</p><br>
+
+            <h3>Horaires</h3>
+            <p>Lundi – Vendredi : 8h – 17h</p>
+            <p>Samedi – Dimanche : Fermé</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+          <h2>Mashamba Djo Mwinsho</h2>
+            <p>
+                Votre partenaire de confiance en ingénierie agricole.
+                Nous accompagnons vos projets de la conception à la réalisation.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="service.html">Services</a></li>    
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Nos Services</h3>
+            <ul>
+                <li>Études agricoles</li>
+                <li>Élevage moderne</li>
+                <li>Pisciculture</li>
+                <li>Gestion de projet</li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📞 +243 973 792 602</p>
+            <p>✉️ johnmputu2@gmail.com</p>
+            <p>📍 RDC</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 AgriConseil. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>

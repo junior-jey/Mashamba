@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>agricole et élevage</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script> 
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.count');
+
+    counters.forEach(counter => {
+        counter.innerText = '0';
+        
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const increment = target / 100; // vitesse de l'animation
+
+            if(count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 20); // appel récursif
+            } else {
+                counter.innerText = target;
+            }
+        }
+
+        updateCount();
+    });
+});
+</script>
+
+
+</head>
+<body>
+
+    <!-- Navbar -->
+   <header>
+    <div class="container nav-container">
+        <h2 class="logo">Mashamba Djo Mwinsho</h2>
+
+        <!-- Bouton hamburger -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Menu -->
+        <nav id="nav-menu">
+            <a href="index.html">Accueil</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Votre partenaire en ingénierie agricole, élevage et pisciculture</h1>
+            <p>
+                Nous accompagnons vos projets agricoles de la conception à la réalisation.
+            </p>
+            <a href="contact.html" class="btn">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+
+            <br><br>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Conception & Planification</h3>
+                    <p>Plans d'exploitation et aménagement agricole.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Suivi de projet</h3>
+                    <p>Accompagnement complet de votre projet.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Achat des concessions agricoles</h3>
+                    <p>Nous vous aidons à trouver et acquérir des terrains agricoles adaptés à votre exploitation..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!-- ================= STATISTIQUES ================= -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat">
+                <h3 class="count" data-target="12">0</h3>
+                <p>Années d'expérience</p>
+            </div>
+            <div class="stat">
+                <h3 class="count" data-target="39">0</h3>
+                <p>Projets accompagnés</p>
+            </div>
+            <div class="stat">
+                <h3 class="count" data-target="38">0</h3>
+                <p>% Clients satisfaits</p>
+            </div>
+            <div class="stat">
+                <h3 class="count" data-target="4">0</h3>
+                <p>Partenaires</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br>
+
+<!-- ================= GALERIE ================= -->
+<section class="gallery">
+   
+    
+
+        <div class="footer-box">
+      
+        <h2 class="section-title">Nos Réalisations</h2><br><br>
+        <div class="gallery-grid">
+            <img src="image10.jpg" alt="Projet 1">
+            <img src="image1 (1).jpeg" alt="Projet 2">
+            <img src="c:\Users\LENOVO\Desktop\dc john\sabugo-de-milho-maduro-no-meio-da-plantação-189546808.webp" alt="Projet 3">
+            <img src="image12.jpg" alt="Projet 4">
+        </div>
+    </div>
+</section>
+
+<br><br>
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+          <h2>Mashamba Djo Mwinsho</h2>
+            <p>
+                Votre partenaire de confiance en ingénierie agricole.
+                Nous accompagnons vos projets de la conception à la réalisation.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Nos Services</h3>
+            <ul>
+                <li>Études agricoles</li>
+                <li>Élevage moderne</li>
+                <li>Pisciculture</li>
+                <li>Gestion de projet</li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📞 +243 973 792 602</p>
+            <p>✉️ johnmputu2@gmail.com</p>
+            <p>📍 RDC</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 AgriConseil. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>

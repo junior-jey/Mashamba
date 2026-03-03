@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>agricole et élevage</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script> 
+
+</head>
+<body>
+
+
+ <!-- Navbar -->
+   <header>
+    <div class="container nav-container">
+        <h2 class="logo">Mashamba Djo Mwinsho</h2>
+
+        <!-- Bouton hamburger -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Menu -->
+        <nav id="nav-menu">
+            <a href="index.html">Accueil</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- HERO -->
+<section class="services-hero">
+    <h1>Nos Services</h1>
+    <p>Des solutions modernes et innovantes pour l’agriculture et l’élevage.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="service-card">
+        <h3>🌾 Études Agricoles</h3>
+        <p>Analyse complète des sols et planification des cultures adaptées.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>🐄 Élevage Moderne</h3>
+        <p>Accompagnement pour optimiser la production animale.</p>
+    </div>
+
+
+    <div class="service-card">
+        <h3>🐟 Pisciculture </h3>
+        <p>Accompagnement technique et gestion moderne des élevage de poissons pour une production rentable et durable .</p>
+    </div>
+
+
+    <div class="service-card">
+        <h3>📊 Gestion de Projet</h3>
+        <p>Planification stratégique et suivi technique de vos exploitations.</p>
+    </div>
+
+    
+
+<!-- POURQUOI NOUS -->
+<section class="why-us">
+    <h2>Pourquoi choisir Mashamba Djo Mwinsho ?</h2>
+    <ul>
+        <li>✔ Expertise professionnelle</li>
+        <li>✔ Solutions personnalisées</li>
+        <li>✔ Accompagnement complet</li>
+        <li>✔ Résultats mesurables</li>
+    </ul>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Prêt à démarrer votre projet ?</h2>
+    <a href="contact.html" class="btn">Contactez-nous</a>
+</section>
+
+</body>
+</html>
